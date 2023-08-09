@@ -31,7 +31,7 @@ Test Amazon Cart Is Empty By Default
 
 Test Amazon Goods Can Be Sorted And Added To Cart
     [Documentation]     This test case checks if the Amazon goods can be selected via the
-    ...                 "search" field, the sorted decreasingly, and two most expensive
+    ...                 "search" field, then sorted decreasingly, and two most expensive
     ...                 Amazon goods can be added to cart.  
 
     # arrange
@@ -55,4 +55,6 @@ Test Amazon Goods Can Be Sorted And Added To Cart
 
     Open Amazon Cart
     ${cart_items_counter}       Get Text                        ${CART_ITEMS_LOCATOR}
+
+    # assert
     Check Cart Items Counter Value                              ${target_cart_items}
