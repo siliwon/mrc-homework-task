@@ -1,0 +1,19 @@
+#IDE settings
+.vscode
+.idea
+
+# virtualenv
+venv
+env
+
+# pytest_cache
+__pycache__
+
+# environment variables passing
+.env
+
+# debug and log files
+*.log
+log.*
+output.xml
+report.html
